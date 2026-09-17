@@ -17,3 +17,38 @@ masa = 1800
 degviela = "BG"
 
 print(zimols, modelis, regd, masa, degviela)
+
+#oop2
+
+class kubs:
+    def __init__ (self, malas_garums, krāsas_nosaukums):
+        self.malas_garums = malas_garums
+        self.krāsas_nosaukums = krāsas_nosaukums
+        
+
+    def aprekinat_tilpumu(self, tilpums, malas_garums):
+        self.tilpums = tilpums
+        self.malas_garums = malas_garums
+        tilpums = malas_garums*malas_garums*malas_garums
+
+kubg = kubs.aprekinat_tilpumu
+malas_garums = 10
+krāsas_nosaukums = "zaļa"
+print(malas_garums)
+
+
+
+
+kubr = kubs.aprekinat_tilpumu
+malas_garums = 1
+krāsas_nosaukums = "sarkana"
+print(malas_garums)
+
+del kubr
+print("Kubsr ir likvidēts")
+
+
+
+
+
+
